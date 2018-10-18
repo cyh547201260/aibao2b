@@ -1,0 +1,218 @@
+/* pages/mechdet/mechdet.wxss */
+page{
+  background: #F1F1F1;
+  padding-bottom: 150rpx;
+}
+.det-banner{
+  width: 100%;
+  height: 250rpx;
+}
+.det-banner image{
+  width: 100%;
+  height: 100%;
+  background: pink;
+}
+.det-mechname{
+  font-size: 32rpx;
+  color: #333;
+  background: white;
+  padding: 18rpx 30rpx;
+}
+.det-mechaddress{
+  background: white;
+  padding: 20rpx 30rpx;
+  margin-top: 20rpx;
+}
+.det-mechaddress{
+  display: flex;
+}
+.det-mech-addicon{
+  flex: 5;
+}
+.det-mech-addicon image{
+  width: 22rpx;
+  height: 28rpx;
+}
+.det-mech-addtext{
+  flex: 82;
+  position: relative;
+}
+.det-mech-addtext::after{
+  content: " ";
+  position: absolute;
+  top: 12rpx;
+  bottom: 12rpx;
+  right: 0;
+  width: 1rpx;
+  border-right: 1rpx solid #E2E2E2;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleX(.5);
+  transform: scaleX(.5);
+}
+.det-mech-addtel{
+  flex: 14;
+  text-align: center;
+}
+.det-mech-addtel image{
+  width: 24rpx;
+  height: 36rpx;
+  margin-top: 20rpx;
+}
+.det-mech-addtext p:first-child{
+  font-size: 28rpx;
+  color: #333;
+  display: block;
+  margin-bottom: 6rpx;
+}
+.det-mech-addtext p:nth-child(2){
+  font-size: 24rpx;
+  color: #666;
+  display: block;
+}
+.det-class-list{
+  background: white;
+  margin-top: 20rpx;
+}
+.list-title{
+  font-size: 30rpx;
+  color: #333;
+  padding: 15rpx 30rpx;
+  border-bottom: 1rpx solid #DDD;
+}
+.list-item{
+  padding: 25rpx 30rpx;
+  display: flex;
+}
+.list-image{
+  flex: 3;
+}
+.list-image image{
+  width: 220rpx;
+  height: 140rpx;
+  background: pink;
+}
+.list-info{
+  flex: 7;
+  padding-left: 25rpx; 
+  padding-bottom: 60rpx;
+  position: relative;
+}
+.class-name{
+  font-size: 30rpx;
+  color: #333;
+}
+.class-add{
+  display: flex;
+  font-size: 26rpx;
+  color: #333;
+  position: absolute;
+  bottom: 20rpx;
+  width: 100%;
+}
+.class-inclass-name{
+  flex: 7;
+  text-align: left;
+}
+.class-addmil{
+  flex: 3;
+  text-align: right;
+  padding-right: 30rpx;
+}
+.list-box{
+  position: relative;
+}
+.list-box:active{
+  background: #E2E2E2;
+}
+.list-box::after{
+  content: " ";
+  position: absolute;
+  right: 30rpx;
+  bottom: 0;
+  left: 30rpx;
+  height: 1rpx;
+  border-bottom: 1rpx solid #E2E2E2;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5);
+}
+.show-class-all{
+  text-align: center;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 26rpx;
+  color: #333;
+}
+.show-class-all:active{
+  background: #E2E2E2;
+}
+.mech-info-desc{
+  padding: 20rpx 30rpx 50rpx 30rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.hid-out-mechinfo{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+.show-meinfo-btn{
+  border-top: 1rpx solid #ddd;
+}
+.special-list-box{
+  overflow: hidden;
+  padding: 10rpx 35rpx;
+}
+.special-list-box>view{
+  float: left;
+  width: 50%;
+  font-size: 28rpx;
+  color: #333;
+  margin: 18rpx 0;
+}
+.det-videos-box{
+  padding: 20rpx 0;
+}
+.det-videos-box swiper image{
+  width: 180rpx;
+  height: 120rpx;
+  background: pink;
+}
+.det-videos-box swiper swiper-item view{
+  font-size: 28rpx;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 15rpx;
+}
+.list-title .more-btn{
+  float: right;
+  padding:0 15rpx;
+  margin-right:-15rpx;
+}
+.envi-img-box{
+  padding: 20rpx 0;
+}
+.envi-img-box image{
+  width: 92%;
+  height: 260rpx;
+  background: pink;
+  margin-left: 4%;
+  margin-bottom: 20rpx;
+}
+.appo-btn{
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: white;
+  background: #4AD59E;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  font-size: 32rpx;
+}

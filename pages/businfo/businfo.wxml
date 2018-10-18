@@ -1,0 +1,82 @@
+<!--pages/businfo/businfo.wxml-->
+<view class='page-box'>
+  <view class='form-title'>
+    <view>完善企业信息</view>
+    <view>请仔细填写，保存后将不能修改</view>
+  </view>
+  <view class='form-box'>
+    <view class='from-item'>
+      <view>姓名</view>
+      <input placeholder='请输入真实姓名'></input>
+    </view>
+    <view class='from-item'>
+      <view>公司名称</view>
+      <input placeholder='请输入公司名称'></input>
+    </view>
+    <view class='from-item'>
+      <view>公司地址</view>
+      <input disabled="{{true}}" bindtap='popChooseAdd' value='123123' placeholder='请选择公司所在地'></input>
+    </view>
+    <view class='from-item'>
+      <view>详细地址</view>
+      <input placeholder='请输入详细公司地址'></input>
+    </view>
+    <view class='from-item'>
+      <view>所属商圈</view>
+      <input placeholder='请填写公司所属商圈'></input>
+    </view>
+    <view class='from-item'>
+      <view>营业执照</view>
+      <input placeholder='点击上传营业执照'></input>
+    </view>
+    <view class='from-item'>
+      <view>客服电话</view>
+      <input placeholder='请输入联系方式'></input>
+    </view>
+  </view>
+</view>
+<view class='choose-image-box'>
+  <view class='choose-image'>
+
+  </view>
+  <view class='pre-image-tip'>营业执照预览</view>
+</view>
+
+<view class='pop-mask' hidden='{{!choosePopState}}'></view>
+<view class='pop-choose-box' hidden='{{!choosePopState}}'>
+  <!--地区 - 一级分类  -->
+  <view class='filter-step2-box filter-address-left'>
+      <scroll-view class='filter-step-box-scroll' scroll-y style="height: 100%;">
+        <view bindtap='addressTapFun1' class='{{addressStep_1_val == 1 ? "classStap_act" : ""}}' data-type="1">东城区</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+      </scroll-view>
+  </view>
+  <!--地区 - 二级分类  -->
+  <view class='filter-step2-box'>
+      <scroll-view class='filter-step-box-scroll' scroll-y style="height: 100%;">
+        <view bindtap='addressTapFun2' class='{{addressStep_2_val == 1 ? "classStap_act" : ""}}' data-type="1">磁器口</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+        <view>二级分类</view>
+      </scroll-view>
+  </view>
+</view>
+
+
+<view class='bot-btn-box'>
+  <view>下一步</view>
+</view>
