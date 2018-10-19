@@ -1,0 +1,82 @@
+/* pages/busback/busback.wxss */
+page{
+  background: #F1F1F1;
+}
+.back-title{
+  height: 240rpx;
+  background: #4AD59E;
+  display: flex;
+}
+.header-image-box{
+  flex: 2;
+  padding: 55rpx 0 0 30rpx;
+}
+.header-info-box{
+  flex: 7;
+}
+.header-image-box image{
+  width: 130rpx;
+  height: 130rpx;
+  background: white;
+  border-radius: 50%;
+}
+.bus-name{
+  font-size: 32rpx;
+  color: white;
+  margin-top: 65rpx;
+}
+.bus-mobile{
+  font-size: 32rpx;
+  color: white;
+  margin-top: 20rpx;
+}
+.menu-block{
+  background: white;
+  margin-top: 20rpx;
+}
+.menu-title{
+  font-size: 30rpx;
+  color: #333;
+  padding: 15rpx 30rpx;
+  position: relative;
+}
+.menu-title::after{
+  content: " ";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1rpx;
+  border-bottom: 1rpx solid #EEEEEE;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5);
+}
+.menu-box{
+  overflow: hidden;
+}
+.menu-item{
+  float: left;
+  width: 25%;
+  padding: 40rpx 0;
+}
+.menu-icon-box{
+  width: 70rpx;
+  height: 70rpx;
+  background: pink;
+  margin: 0 auto;
+}
+.menu-icon-box image{
+  width: 100%;
+  height: 100%;
+}
+.menu-name{
+  text-align: center;
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 10rpx;
+}
+.bus-info-box{
+  padding-bottom: 100rpx;
+}

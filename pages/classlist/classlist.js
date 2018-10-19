@@ -1,4 +1,4 @@
-// pages/mechdet/mechdet.js
+// pages/classlist/classlist.js
 Page({
 
   /**

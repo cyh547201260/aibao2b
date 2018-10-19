@@ -1,27 +1,13 @@
-// pages/videolist/videolist.js
+// pages/busback/busback.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    showEditName:false,
+  
   },
-  //关闭修改视频名称
-  editNameHide: function (e) {
-    this.setData({
-      showEditName: false
-    })
-  },
-  //修改视频名称
-  editNameShow:function(e){
-    this.setData({
-      showEditName: true
-    })
-  },
-  fun:function(){
-    console.log(123)
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

@@ -1,0 +1,32 @@
+/* pages/audit/audit.wxss */
+.audit-icon{
+  width: 350rpx;
+  height: 220rpx;
+  margin: 0 auto;
+  margin-top: 250rpx;
+}
+.audit-icon image{
+  width: 100%;
+  height: 100%;
+}
+.audit-text{
+  text-align: center;
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+.reaudit-btn{
+  width: 200rpx;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  border: 1rpx solid #666;
+  border-radius: 8rpx;
+  font-size: 30rpx;
+  margin: 0 auto;
+  margin-top: 50rpx;
+}
+.reaudit-btn:active{
+  background: #666;
+  color: white;
+}

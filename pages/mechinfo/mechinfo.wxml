@@ -1,0 +1,54 @@
+<!--pages/mechinfo/mechinfo.wxml-->
+<view class='mech-info-block'>
+  <view class='info-block-title'>机构介绍</view>
+  <view class='info-text-input'>
+    <textarea maxlength='200' placeholder='请填写机构介绍，字数不超过200字'></textarea>
+  </view>
+</view>
+<view class='mech-info-block'>
+  <view class='info-block-title'>办学特色</view>
+    <view class='info-input-box' wx:for='{{specialList}}' wx:key="spid">
+      <input bindinput='specialInput' maxlength='20' value="{{item}}" data-id="{{index}}" placeholder='请填写办学特色'></input><view>
+      <span data-id='{{index}}' bindtap='addSepcialInput'>+</span>
+      <span data-id='{{index}}' wx:if="{{!(specialList.length == 1 && index == 0)}}" bindtap='delSepcialInput'>-</span>
+    </view>
+  </view>
+</view>
+<view class='mech-info-block'>
+  <view class='info-block-title'>优惠政策</view>
+    <view class='info-input-box'>
+      <input maxlength='20' placeholder='请填写办学特色'></input><view>
+    </view>
+  </view>
+</view>
+<view class='mech-info-block'>
+  <view class='info-block-title'>办学环境</view>
+  <view class='images-list'>
+    <view class='image-item'>
+      <span class="del-image-btn">-</span>
+      <image></image>
+    </view>
+    <view class='image-item'>
+      <span class="del-image-btn">-</span>
+      <image></image>
+    </view>
+    <view class='image-item'>
+      <span class="del-image-btn">-</span>
+      <image></image>
+    </view>
+    <view class='image-item add-item-btn'>
+      ＋
+    </view>
+  </view>  
+</view>
+<view class='mech-info-block'>
+  <view class='info-block-title'>企业logo</view>
+  <view class='images-list'>
+    <view class='image-item add-item-btn'>
+      ＋
+    </view>
+  </view>  
+</view>
+<view class='save-btn-box'>
+  <view class='save-btn'>保存</view>
+</view>

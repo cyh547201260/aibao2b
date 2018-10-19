@@ -1,0 +1,70 @@
+/* pages/classlist/classlist.wxss */
+page{
+  background: #F1F1F1;
+  padding-bottom: 130rpx;
+}
+.class-item{
+  background: white;
+  display: flex;
+  padding: 25rpx;
+  margin-bottom: 10rpx;
+}
+.class-image{
+  flex: 3;
+}
+.class-image{
+  width: 220rpx;
+  height: 140rpx;
+  background: pink;
+}
+.class-info{
+  flex: 7;
+  padding:0% 25rpx;
+  position: relative;
+  padding-bottom: 60rpx;
+}
+.class-name{
+  font-size: 30rpx;
+  color: #333;
+  display: -webkit-box;    
+  -webkit-box-orient: vertical;    
+  -webkit-line-clamp: 2;    
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+.class-set-box{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  height: 40rpx;
+  width: 100%;
+}
+.class-price{
+  font-size: 28rpx;
+  color: #FF6C00;
+  float: left;
+  flex: 6;
+}
+.class-edit-btn{
+  flex: 2;
+  font-size: 26rpx;
+  color: #666;
+}
+.up-btn{
+  flex: 3;
+  font-size: 26rpx;
+  color: #666;
+  padding-right: 30rpx;
+}
+.bot-btn{
+  position: fixed;
+  width: 100%;
+  height: 100rpx;
+  left: 0;
+  bottom: 20rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: white;
+  background: #4AD59E;
+  font-size: 32rpx;
+}

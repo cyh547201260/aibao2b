@@ -1,0 +1,50 @@
+<!--pages/classlist/classlist.wxml-->
+<view class='class-list-box'>
+  <view class='class-item'>
+    <view class='class-image'> <image></image> </view>
+    <view class='class-info'> 
+      <view class='class-name'>华尔街英语 (朝阳大悦城店)</view>
+      <view class='class-set-box'>
+        <span class="class-price">120元</span>
+        <span class="class-edit-btn">编辑</span>
+        <span class="up-btn">上架课程</span>
+      </view>
+    </view>
+  </view>
+  <view class='class-item'>
+    <view class='class-image'> <image></image> </view>
+    <view class='class-info'> 
+      <view class='class-name'>华尔街英语 (朝阳大悦城店)</view>
+      <view class='class-set-box'>
+        <span class="class-price">120元</span>
+        <span class="class-edit-btn">编辑</span>
+        <span class="up-btn">上架课程</span>
+      </view>
+    </view>
+  </view>
+  <view class='class-item'>
+    <view class='class-image'> <image></image> </view>
+    <view class='class-info'> 
+      <view class='class-name'>华尔街英语 (朝阳大悦城店)</view>
+      <view class='class-set-box'>
+        <span class="class-price">120元</span>
+        <span class="class-edit-btn">编辑</span>
+        <span class="up-btn">上架课程</span>
+      </view>
+    </view>
+  </view>
+  <view class='class-item'>
+    <view class='class-image'> <image></image> </view>
+    <view class='class-info'> 
+      <view class='class-name'>华尔街英语 (朝阳大悦城店)</view>
+      <view class='class-set-box'>
+        <span class="class-price">120元</span>
+        <span class="class-edit-btn">编辑</span>
+        <span class="up-btn">上架课程</span>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='bot-btn'>
+  新建课程
+</view>

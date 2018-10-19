@@ -1,0 +1,6 @@
+<!--pages/audit/audit.wxml-->
+<view class='audit-icon'>
+  <image src='../../image/{{auditState == 1 ? "audit" : "notpass"}}.png'></image>
+</view>
+<view class='audit-text'>{{auditState == 1 ? '审核中，请耐心等待' : '很遗憾，申请失败~'}}</view>
+<view class='reaudit-btn' wx:if='{{auditState == 3}}'>重新申请</view>

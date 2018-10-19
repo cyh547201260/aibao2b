@@ -1,0 +1,38 @@
+<!--pages/busback/busback.wxml-->
+<view class='back-title'>
+  <view class='header-image-box'>
+    <image></image>
+  </view>
+  <view class='header-info-box'>
+    <view class='bus-name'>商家名称</view>
+    <view class='bus-mobile'>15811111111</view>
+  </view>
+</view>
+<view class='menu-block'>
+  <view class='menu-title'>商品信息</view>
+  <view class='menu-box'>
+    <view class='menu-item'>
+      <view class='menu-icon-box'>
+        <image></image>
+      </view>
+      <view class='menu-name'>本地课程</view>
+    </view>
+  </view>
+</view>
+<view class='menu-block bus-info-box'>
+  <view class='menu-title'>商户信息</view>
+  <view class='menu-box'>
+    <view class='menu-item'>
+      <view class='menu-icon-box'>
+        <image></image>
+      </view>
+      <view class='menu-name'>机构信息</view>
+    </view>
+    <view class='menu-item'>
+      <view class='menu-icon-box'>
+        <image></image>
+      </view>
+      <view class='menu-name'>活动视频</view>
+    </view>
+  </view>
+</view>

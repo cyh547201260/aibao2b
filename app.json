@@ -1,8 +1,11 @@
 {
   "pages":[
-    "pages/businfo/businfo",
+    "pages/classlist/classlist",
     "pages/videolist/videolist",
-    "pages/mechdet/mechdet",
+    "pages/mechinfo/mechinfo",
+    "pages/busback/busback",
+    "pages/audit/audit",
+    "pages/businfo/businfo",
     "pages/comdet/comdet",
     "pages/login/login"
   ],
