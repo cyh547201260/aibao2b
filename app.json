@@ -1,13 +1,14 @@
 {
   "pages":[
+    "pages/busback/busback",
+    "pages/login/login",
+    "pages/businfo/businfo",
+    "pages/mechinfo/mechinfo",
+    "pages/newclass/newclass",
     "pages/classlist/classlist",
     "pages/videolist/videolist",
-    "pages/mechinfo/mechinfo",
-    "pages/busback/busback",
     "pages/audit/audit",
-    "pages/businfo/businfo",
-    "pages/comdet/comdet",
-    "pages/login/login"
+    "pages/comdet/comdet"
   ],
   "window":{
     "backgroundTextStyle":"light",

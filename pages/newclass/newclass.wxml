@@ -1,0 +1,124 @@
+<!--pages/mechinfo/mechinfo.wxml-->
+<view class='mech-info-block'>
+  <view class='info-block-title'>
+    <view>机构介绍</view>
+    <view>请仔细填写课程信息</view>
+  </view>
+  <view class='class-input-box'>
+    <view class='class-input-item'>
+      <view>课程名称</view>
+      <input placeholder='请输入课程名称'></input>
+    </view>
+    <view class='class-input-item'>
+      <view>课程价格 (元)</view>
+      <input placeholder='请输入课程价格'></input>
+    </view>
+    <view class='class-input-item' bindtap='popUpShow' data-type='1'>
+      <view>适合人群</view>
+      <input placeholder='请选择适合人群'></input>
+    </view>
+    <view class='class-input-item' bindtap='popUpShow' data-type='2'>
+      <view>适合基础</view>
+      <input placeholder='请选择适合基础'></input>
+    </view>
+    <view class='class-input-item' bindtap='popUpShow' data-type='3'>
+      <view>上课人数</view>
+      <input placeholder='请选择上课人数'></input>
+    </view>
+    <view class='class-input-item' bindtap='popUpShow' data-type='4'>
+      <view>课程分类</view>
+      <input placeholder='请选择课程分类'></input>
+    </view>
+  </view>
+</view>
+<view class='mech-info-block'>
+  <view class='info-block-title'>课程亮点</view>
+    <view class='info-input-box' wx:for='{{specialList}}' wx:key="spid">
+      <input bindinput='specialInput' maxlength='20' value="{{item}}" data-id="{{index}}" placeholder='请填写课程亮点'></input><view>
+      <span data-id='{{index}}' bindtap='addSepcialInput'>+</span>
+      <span data-id='{{index}}' wx:if="{{!(specialList.length == 1 && index == 0)}}" bindtap='delSepcialInput'>-</span>
+    </view>
+  </view>
+</view>
+<view class='mech-info-block'>
+  <view class='info-block-title'>课程详情</view>
+
+  
+  <view class='class-det-input-box'>
+    <view class='class-det-name'>
+      <span></span>适用对象
+    </view>
+    <view class='class-det-input'>
+      <input placeholder='请填写使用对象'></input>
+    </view>
+  </view>
+  <view class='class-det-input-box'>
+    <view class='class-det-name'>
+      <span></span>学习目标
+    </view>
+    <view class='class-det-input'>
+      <input placeholder='请填写学习目标'></input>
+    </view>
+  </view>
+  <view class='class-det-input-box'>
+    <view class='class-det-name'>
+      <span></span>课程特色
+    </view>
+    <view class='class-det-input'>
+      <input placeholder='请填写课程特色'></input>
+    </view>
+  </view>
+
+
+  <view class='class-det-input-box'>
+    <view class='class-det-name'>
+      <span></span>视频展示
+    </view>
+    <view class='class-det-input cancel-padding'>
+      <view class='images-list'>
+        <view class='image-item add-item-btn'>
+          ＋
+        </view>
+      </view>  
+    </view>
+  </view>
+
+  <view class='class-det-input-box'>
+    <view class='class-det-name'>
+      <span></span>图片展示
+    </view>
+    <view class='class-det-input cancel-padding'>
+      <view class='images-list'>
+        <view class='image-item'>
+          <span class="del-image-btn">-</span>
+          <image></image>
+        </view>
+        <view class='image-item'>
+          <span class="del-image-btn">-</span>
+          <image></image>
+        </view>
+        <view class='image-item'>
+          <span class="del-image-btn">-</span>
+          <image></image>
+        </view>
+        <view class='image-item add-item-btn'>
+          ＋
+        </view>
+      </view>  
+    </view>
+  </view>
+  
+</view>
+
+<view hidden='{{!showEditName}}' class='pop-mask'></view>
+<view hidden='{{!showEditName}}' class='popup-box'>
+  <view class='pop-box-title'>{{chooseValObj[popType]['name']}}<span bindtap="popUpHid">×</span></view>
+  <view class='pop-cont-box'>
+    <span bindtap="popChoose" data-val="{{item}}" wx:for='{{chooseValObj[popType]["data"]}}'>{{item}}</span>
+  </view>
+  <view class='confirm-btn'>确定</view>
+</view>
+
+<view class='save-btn-box'>
+  <view class='save-btn'>上传课程</view>
+</view>

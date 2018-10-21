@@ -11,9 +11,9 @@
 <view class='menu-block'>
   <view class='menu-title'>商品信息</view>
   <view class='menu-box'>
-    <view class='menu-item'>
+    <view class='menu-item' bindtap='goPage' data-type="1">
       <view class='menu-icon-box'>
-        <image></image>
+        <image src='../../image/busicon_1.png'></image>
       </view>
       <view class='menu-name'>本地课程</view>
     </view>
@@ -22,15 +22,15 @@
 <view class='menu-block bus-info-box'>
   <view class='menu-title'>商户信息</view>
   <view class='menu-box'>
-    <view class='menu-item'>
+    <view class='menu-item' bindtap='goPage' data-type="2">
       <view class='menu-icon-box'>
-        <image></image>
+        <image src='../../image/busicon_2.png'></image>
       </view>
       <view class='menu-name'>机构信息</view>
     </view>
-    <view class='menu-item'>
+    <view class='menu-item' bindtap='goPage' data-type="3">
       <view class='menu-icon-box'>
-        <image></image>
+        <image src='../../image/busicon_3.png'></image>
       </view>
       <view class='menu-name'>活动视频</view>
     </view>

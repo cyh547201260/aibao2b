@@ -58,8 +58,12 @@ page{
 .choose-image{
   width: 240rpx;
   height: 310rpx;
-  background: pink;
+  background: #eee;
   margin: 0 auto;
+}
+.choose-image image{
+  width: 100%;
+  height: 100%;
 }
 .pre-image-tip{
   font-size: 24rpx;
@@ -150,4 +154,25 @@ page{
   transform-origin: 0 0;
   -webkit-transform: scaleY(.5);
   transform: scaleY(.5);
+}
+.map-view{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #eeeeee;
+  z-index: 99999;
+}
+.addressConfirm{
+  position: fixed;
+  width: 100%;
+  height: 90rpx;
+  background: #4AD59E;
+  margin: 0 auto;
+  color: white;
+  font-size: 32rpx;
+  bottom: 0;
+  text-align: center;
+  line-height: 90rpx;
 }

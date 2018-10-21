@@ -1,11 +1,28 @@
 //app.js
 App({
+  data:{
+    serverUrl:'https://ibe.lanzhisky.com',
+    mapKey:'LN7BZ-VFMA4-X37UR-X7LQ2-H5L2K-PABWV',
+    userMobile:'15810733287',
+    token:'',
+    user:'',
+  },
   onLaunch: function () {
+    var _this = this;
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
+    wx.getStorage({
+      key: 'token',
+      success: function(res) {
+        _this.globalData.token = res.data;
+      },
+    })
+
+    console.log(1111111111111111111111111111)
+    console.log(this.globalData.token)
     // 登录
     wx.login({
       success: res => {
@@ -34,6 +51,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    token:'',
   }
 })

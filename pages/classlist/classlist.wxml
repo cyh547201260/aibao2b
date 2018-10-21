@@ -45,6 +45,6 @@
     </view>
   </view>
 </view>
-<view class='bot-btn'>
+<view class='bot-btn' bindtap='newClass'>
   新建课程
 </view>

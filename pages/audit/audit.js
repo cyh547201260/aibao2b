@@ -5,14 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    auditState:1,   //1审核中 2审核通过  3审核不通过
+    auditState:3,   //1审核中 2审核通过  3审核不通过
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      auditState:options.type
+    })
   },
 
   /**

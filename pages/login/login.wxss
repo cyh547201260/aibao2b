@@ -1,4 +1,7 @@
 /* pages/login/login.wxss */
+page{
+  padding: 0
+}
 .login-form-box{
   width: 87.46%;
   margin: 0 auto;

@@ -1,20 +1,51 @@
 // pages/classlist/classlist.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    serverUrl:app.data.serverUrl,
+    classList:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.getClassList()
+    console.log(app.globalData.token)
   },
 
+  //新建课程
+  newClass:function(){
+    wx.navigateTo({
+      url: '../newclass/newclass',
+    })
+  },
+  //获取课程列表
+  getClassList:function(){
+    var _this = this;
+    wx.request({
+      url: _this.data.serverUrl + '/app/getcourseList?token=' + app.globalData.token,
+      method: 'GET',
+      header: {
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      success: function (res) {
+        if (res.data.code == 0) {
+          
+        } else {
+          // if(this.data.)
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'none'
+          })
+        }
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
